@@ -45,10 +45,10 @@ namespace HighLow
                 return 0;
             }
 
-            if (percent >= 1.05f) return -2; //Grater then 5%
-            if (percent > 1.00f) return -1; //Grater then 0%
-            if (percent <= 0.95f) return 2; //Smaller then 5%
-            if (percent < 1.00f) return 1; //Smaller then 0%
+            if (percent >= 1.05f) return -2; //Less then number over 5%
+            if (percent > 1.00f) return -1; //Less then number between 0-5%
+            if (percent <= 0.95f) return 2; //Greater then number over 5%
+            if (percent < 1.00f) return 1; //Greater then number between 0-5%
             throw new Exception("Invalid Range");
         }
     }
